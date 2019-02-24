@@ -1,4 +1,4 @@
-
+﻿
 public class Liqur {
 	String LiqurName;   //名前の宣言
 	int zaiko;          //現在庫の宣言
@@ -47,7 +47,7 @@ public class Liqur {
  		this.zaiko -= this.comsumption; //現在庫から本日の消費本数をマイナス。営業終了時の在庫
  	}
  	int calc(int uriage) {
- 		int orderNumber = uriage/orderPrice;
+ 		orderNumber = uriage/orderPrice;
  		this.zaiko += this.orderNumber;
  		this.cost = this.orderNumber*this.price;
  		return orderNumber;
